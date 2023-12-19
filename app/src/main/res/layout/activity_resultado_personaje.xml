@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#1586BF"
+        app:title="Resultado Personaje Creado"
+        app:titleTextColor="@color/white"/>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/iconobase"
+        app:shapeAppearanceOverlay="@style/redondeado"/>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tu personaje creado:"
+        android:textSize="18dp"
+        android:textColor="#1586BF"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="@string/personajeDatos"
+        android:layout_gravity="center"/>
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="60dp"
+        android:stretchColumns="2">
+        <TableRow>
+        <Button
+            android:id="@+id/botonAnteriorActividad"
+            android:layout_width="100dp"
+            android:layout_column="1"
+            android:layout_height="wrap_content"
+            android:text="Anterior actividad"
+            android:textColor="#FFFFFF"
+            android:background="#1586BF"/>
+
+        <Button
+            android:id="@+id/botonProximaActividad"
+            android:layout_width="100dp"
+            android:layout_column="3"
+            android:layout_height="wrap_content"
+            android:text="Proxima Actividad"
+            android:textColor="#FFFFFF"
+            android:background="#1586BF"/>
+        </TableRow>
+    </TableLayout>
+</LinearLayout>
